@@ -1,0 +1,27 @@
+{
+  "name": "seneca-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "docker.start": "pm2-runtime start process.config.js --env production"
+  },
+  "author": "peyton",
+  "license": "ISC",
+  "dependencies": {
+    "bluebird": "^3.5.5",
+    "commander": "^3.0.0",
+    "express": "^4.17.1",
+    "hapi": "^18.1.0",
+    "request": "^2.88.0",
+    "seneca": "^3.13.3",
+    "seneca-balance-client": "^1.0.0",
+    "seneca-consul-registry": "^0.2.0",
+    "seneca-entity": "^4.1.0",
+    "seneca-mesh": "^1.1.0",
+    "seneca-mongo-store": "^1.4.1",
+    "seneca-web": "^2.2.1",
+    "seneca-web-adapter-express": "^1.1.2",
+    "seneca-web-adapter-hapi": "^1.0.2"
+  }
+}

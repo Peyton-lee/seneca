@@ -1,0 +1,25 @@
+version: '3'
+services:
+  seneca-api:
+    # 用于内部部署
+    build: ./api
+    restart: always
+    # image: xxx镜像(除了Dockerfile build的另外一种方式 用于企业软件交付)
+    container_name: seneca-api
+    networks: 
+      - seneca-network
+    ports:
+    - 3000:3000
+  seneca-srv1: 
+    # 用于内部部署
+    build: ./srv1
+    restart: always
+    # image: xxx镜像(除了Dockerfile build的另外一种方式 用于企业软件交付)
+    container_name: seneca-srv1
+    networks: 
+      - seneca-network
+
+networks: 
+  seneca-network:
+    external:
+      name: seneca-network

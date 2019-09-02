@@ -1,0 +1,8 @@
+{
+  "seneca-srv1": {
+    "type": "tcp",
+    "port": 3001,
+    "host": "seneca-srv1",
+    "pin": "role:api,path:*"
+  }
+}
