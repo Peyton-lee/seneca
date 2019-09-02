@@ -11,5 +11,8 @@ sh configs.sh
 
 ### default-demo是主要代码，src下是seneca的简单例子
 
+### 大概架构图如下
+![架构图](https://raw.githubusercontent.com/Peyton-lee/webServer/master/image/go.png "架构图")
+
 
 
