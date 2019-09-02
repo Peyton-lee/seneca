@@ -9,5 +9,7 @@
 sh configs.sh
 ```
 
+### default-demo是主要代码，src下是seneca的简单例子
+
 
 
