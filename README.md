@@ -6,7 +6,7 @@
 
 ### docker-compose 启动
 ```sh
-sh configs.sh
+sh publish.sh
 ```
 
 ### api是聚合路由，order_srv下是微服务，srv1是例子
