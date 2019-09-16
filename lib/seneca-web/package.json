@@ -1,0 +1,147 @@
+{
+  "_from": "seneca-web@^2.2.1",
+  "_id": "seneca-web@2.2.1",
+  "_inBundle": false,
+  "_integrity": "sha512-jBvYgrEYLEJXtRICC5CiA9F5tWuM99W5GwKZ6LWiid/WgaTszyU15TrtSo31ORvIuVdexsRIjXMiA6wDz+DeCA==",
+  "_location": "/seneca-web",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "seneca-web@^2.2.1",
+    "name": "seneca-web",
+    "escapedName": "seneca-web",
+    "rawSpec": "^2.2.1",
+    "saveSpec": null,
+    "fetchSpec": "^2.2.1"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/seneca-web/-/seneca-web-2.2.1.tgz",
+  "_shasum": "4d044e23010809f580e2e92fbe9f0386f3605d44",
+  "_spec": "seneca-web@^2.2.1",
+  "_where": "/Users/lipeibin/Desktop/code/xservices/api",
+  "author": {
+    "name": "Richard Rodger",
+    "url": "https://github.com/rjrodger"
+  },
+  "bugs": {
+    "url": "https://github.com/senecajs/seneca-web/issues"
+  },
+  "bundleDependencies": false,
+  "contributors": [
+    {
+      "name": "Mircea Alexandru",
+      "url": "http://alexandrumircea.ro"
+    },
+    {
+      "name": "Dean McDonnell",
+      "url": "http://github.com/mcdonnelldean"
+    },
+    {
+      "name": "Mihai Dima",
+      "url": "https://github.com/mihaidma"
+    },
+    {
+      "name": "Michael Robinson",
+      "url": "https://github.com/faceleg"
+    },
+    {
+      "name": "Wyatt Preul",
+      "url": "https://github.com/geek"
+    },
+    {
+      "name": "Cristian Kiss",
+      "url": "https://github.com/ckiss"
+    },
+    {
+      "name": "Shane Lacey",
+      "url": "https://github.com/shanel262"
+    },
+    {
+      "name": "William P. Riley-Land",
+      "url": "https://github.com/wprl"
+    },
+    {
+      "name": "Adrien Becchis",
+      "url": "https://github.com/AdrieanKhisbe"
+    },
+    {
+      "name": "Marius Ursache",
+      "url": "https://github.com/bamse16"
+    },
+    {
+      "name": "Vito Tardia",
+      "url": "https://github.com/vtardia"
+    },
+    {
+      "name": "Michele Capra",
+      "url": "https://github.com/piccoloaiutante"
+    },
+    {
+      "name": "David Mark Clements",
+      "url": "https://github.com/davidmarkclements"
+    },
+    {
+      "name": "Reto Inderbitzin",
+      "url": "https://github.com/indr"
+    },
+    {
+      "name": "David Gonzalez",
+      "url": "http://github.com/dgonzalez"
+    },
+    {
+      "name": "Tyler Waters",
+      "url": "https://github.com/tswaters"
+    },
+    {
+      "name": "Isaac Kasongoyo",
+      "url": "https://github.com/kasongoyo"
+    }
+  ],
+  "dependencies": {
+    "lodash": "^4.17.10"
+  },
+  "deprecated": false,
+  "description": "Http route mapping for Seneca microservices.",
+  "devDependencies": {
+    "coveralls": "^3.0.2",
+    "docco": "^0.8.0",
+    "eslint": "^5.5.0",
+    "mocha": "^5.2.0",
+    "nyc": "^13.0.1",
+    "prettier": "^1.9.2",
+    "request": "^2.88.0",
+    "seneca": "^3.7.0"
+  },
+  "files": [
+    "LICENSE",
+    "README.md",
+    "web.js",
+    "lib"
+  ],
+  "homepage": "https://github.com/senecajs/seneca-web#readme",
+  "keywords": [
+    "seneca",
+    "web",
+    "plugin"
+  ],
+  "license": "MIT",
+  "main": "web.js",
+  "name": "seneca-web",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/senecajs/seneca-web.git"
+  },
+  "scripts": {
+    "annotate": "docco seneca-web-adapter-express.js -o docs/annotated",
+    "coverage": "nyc --reporter=html --report-dir=docs/coverage npm test",
+    "coveralls": "nyc --reporter=text-lcov npm test | coveralls",
+    "pretest": "eslint .",
+    "prettier": "prettier --write --no-semi --single-quote web.js test/*.js",
+    "test": "mocha",
+    "test-debug": "node --inspect-brk node_modules/mocha/bin/mocha --no-timeouts"
+  },
+  "version": "2.2.1"
+}

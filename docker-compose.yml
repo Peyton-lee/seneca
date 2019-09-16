@@ -1,0 +1,36 @@
+version: '3'
+services:
+  seneca-api:
+    # 用于内部部署
+    # build: .
+    image: xservices:latest
+    restart: always
+    container_name: seneca-api
+    networks: 
+      - seneca-network
+    ports:
+    - 3000:3000
+    command: ["npm", "run", "docker.start.api"]
+  seneca-srv1: 
+    # 用于内部部署
+    image: xservices:latest
+    # build: .
+    restart: always
+    container_name: seneca-srv1
+    networks: 
+      - seneca-network
+    command: ["npm", "run", "docker.start.seneca-srv1"]
+  seneca-order-srv: 
+    # 用于内部部署
+    image: xservices:latest
+    # build: .
+    restart: always
+    container_name: seneca-order-srv
+    networks: 
+      - seneca-network
+    command: ["npm", "run", "docker.start.order-srv"]
+
+networks: 
+  seneca-network:
+    external:
+      name: seneca-network

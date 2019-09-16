@@ -1,0 +1,20 @@
+{
+  "mongoDomain": {
+    "uri": "mongodb://pocketmonstertest.linnsea.com:27017/seneca?authSource=admin",
+    "options": {
+      "user": "",
+      "pass": "",
+      "useUnifiedTopology": true,
+      "useNewUrlParser": true
+    }
+  },
+  "order_srv": {
+    "uri": "mongodb://pocketmonstertest.linnsea.com:27017/order_srv?authSource=admin",
+    "options": {
+      "user": "",
+      "pass": "",
+      "useUnifiedTopology": true,
+      "useNewUrlParser": true
+    }
+  }
+}

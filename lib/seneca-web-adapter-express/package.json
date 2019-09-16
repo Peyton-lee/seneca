@@ -1,0 +1,163 @@
+{
+  "_from": "seneca-web-adapter-express@^1.1.2",
+  "_id": "seneca-web-adapter-express@1.1.2",
+  "_inBundle": false,
+  "_integrity": "sha512-XuDZnmgCjkvUnvNtEle0S/Y8YVSDNVTJUFvTKCC0W1uee3Ob4YiPP1d4Iti4xLQB94RpMUQQWbU2izl1x3wzeg==",
+  "_location": "/seneca-web-adapter-express",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "seneca-web-adapter-express@^1.1.2",
+    "name": "seneca-web-adapter-express",
+    "escapedName": "seneca-web-adapter-express",
+    "rawSpec": "^1.1.2",
+    "saveSpec": null,
+    "fetchSpec": "^1.1.2"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/seneca-web-adapter-express/-/seneca-web-adapter-express-1.1.2.tgz",
+  "_shasum": "a73c96cbd0ea1044774fb07f9f9a08067ea47077",
+  "_spec": "seneca-web-adapter-express@^1.1.2",
+  "_where": "/Users/lipeibin/Desktop/code/xservices/api",
+  "author": {
+    "name": "Richard Rodger",
+    "url": "https://github.com/rjrodger"
+  },
+  "bugs": {
+    "url": "https://github.com/senecajs/seneca-web-adapter-express/issues"
+  },
+  "bundleDependencies": false,
+  "contributors": [
+    {
+      "name": "Mircea Alexandru",
+      "url": "http://alexandrumircea.ro"
+    },
+    {
+      "name": "Dean McDonnell",
+      "url": "http://github.com/mcdonnelldean"
+    },
+    {
+      "name": "Mihai Dima",
+      "url": "https://github.com/mihaidma"
+    },
+    {
+      "name": "Michael Robinson",
+      "url": "https://github.com/faceleg"
+    },
+    {
+      "name": "Wyatt Preul",
+      "url": "https://github.com/geek"
+    },
+    {
+      "name": "Cristian Kiss",
+      "url": "https://github.com/ckiss"
+    },
+    {
+      "name": "Shane Lacey",
+      "url": "https://github.com/shanel262"
+    },
+    {
+      "name": "William P. Riley-Land",
+      "url": "https://github.com/wprl"
+    },
+    {
+      "name": "Adrien Becchis",
+      "url": "https://github.com/AdrieanKhisbe"
+    },
+    {
+      "name": "Marius Ursache",
+      "url": "https://github.com/bamse16"
+    },
+    {
+      "name": "Vito Tardia",
+      "url": "https://github.com/vtardia"
+    },
+    {
+      "name": "Michele Capra",
+      "url": "https://github.com/piccoloaiutante"
+    },
+    {
+      "name": "David Mark Clements",
+      "url": "https://github.com/davidmarkclements"
+    },
+    {
+      "name": "Reto Inderbitzin",
+      "url": "https://github.com/indr"
+    },
+    {
+      "name": "David Gonzalez",
+      "url": "http://github.com/dgonzalez"
+    },
+    {
+      "name": "Tyler Waters",
+      "url": "https://github.com/tswaters"
+    }
+  ],
+  "dependencies": {
+    "lodash": "^4.17.10"
+  },
+  "deprecated": false,
+  "description": "seneca-web adapter for express",
+  "devDependencies": {
+    "body-parser": "^1.15.2",
+    "cookie-parser": "^1.4.3",
+    "coveralls": "^3.0.2",
+    "docco": "^0.8.0",
+    "eslint": "^5.5.0",
+    "express": "^4.14.0",
+    "express-session": "^1.14.1",
+    "mocha": "^5.2.0",
+    "nyc": "^13.0.1",
+    "passport": "^0.3.2",
+    "passport-local": "^1.0.0",
+    "pre-commit": "^1.1.3",
+    "prettier": "^1.9.2",
+    "request": "^2.88.0",
+    "seneca": "^3.7.0",
+    "seneca-web": "^2.2.0",
+    "sinon": "^1.17.6"
+  },
+  "files": [
+    "LICENSE",
+    "README.md",
+    "seneca-web-adapter-express.js",
+    "read-body.js"
+  ],
+  "homepage": "https://github.com/senecajs/seneca-web-adapter-express#readme",
+  "keywords": [
+    "seneca",
+    "web",
+    "adapter",
+    "express"
+  ],
+  "license": "MIT",
+  "main": "seneca-web-adapter-express.js",
+  "name": "seneca-web-adapter-express",
+  "nyc": {
+    "check-coverage": true,
+    "lines": 80,
+    "statements": 80,
+    "functions": 80,
+    "branches": 80
+  },
+  "peerDependencies": {
+    "seneca-web": "^1.0.0 || ^2.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/senecajs/seneca-web-adapter-express.git"
+  },
+  "scripts": {
+    "annotate": "docco seneca-web-adapter-express.js -o docs/annotated",
+    "coverage": "nyc --reporter=html --report-dir=docs/coverage npm test",
+    "coveralls": "nyc --reporter=text-lcov npm test | coveralls",
+    "pretest": "eslint .",
+    "prettier": "prettier --write --no-semi --single-quote seneca-web-adapter-express.js test/*.js",
+    "test": "mocha",
+    "test-debug": "node --inspect-brk node_modules/mocha/bin/mocha --no-timeouts"
+  },
+  "version": "1.1.2"
+}
