@@ -28,7 +28,7 @@
     "seneca-consul-registry": "^0.2.0",
     "seneca-entity": "^4.1.0",
     "seneca-joi": "^4.1.0",
-    "seneca-mesh": "^1.1.0",
+    "seneca-mesh": "^1.5.0",
     "seneca-mongo-store": "^1.4.1",
     "seneca-web": "^2.2.1",
     "seneca-web-adapter-express": "^1.1.2",
